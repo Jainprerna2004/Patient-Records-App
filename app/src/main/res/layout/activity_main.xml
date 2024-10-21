@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightBackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#5C5959"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/hospitalLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospitalLogo"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:text="Welcome to"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/halfText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcomeText"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="Health Department"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/halfText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Transforming the way you manage patient records"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/subText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="and enhance healthcare efficiency."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!-- GridLayout for Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="1"
+        android:layout_gravity="center">
+
+        <!-- Button 1: Enter Patient Records -->
+        <Button
+            android:id="@+id/enterPatientRecordsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="#141313"
+            android:text="Enter Patient Records"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/btn_back"
+            />
+
+        <!-- Button 2: View Status -->
+        <Button
+            android:id="@+id/viewStatusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="#141313"
+            android:text="View Status"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/btn_back" />
+
+        <!-- Button 3: Update Record -->
+        <Button
+            android:id="@+id/updateRecordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:backgroundTint="#141313"
+            android:text="Update Record"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/btn_back" />
+
+    </GridLayout>
+</LinearLayout>
